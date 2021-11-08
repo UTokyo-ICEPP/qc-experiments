@@ -3,7 +3,7 @@ from qiskit_experiments.database_service import DbExperimentDataV1 as DbExperime
 
 from .experiment import MeasurementErrorExperiment
 
-class MeasurementErrorMitigation(object):
+class MeasurementErrorMitigation:
     def __init__(self, backend, qubits):
         self.backend = backend
         self.qubits = qubits

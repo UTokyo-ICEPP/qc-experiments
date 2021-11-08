@@ -1,6 +1,8 @@
 from qiskit.ignis.mitigation.measurement import MeasurementFilter
 from qiskit_experiments.database_service import DbExperimentDataV1 as DbExperimentData
 
+from .experiment import MeasurementErrorExperiment
+
 class MeasurementErrorMitigation(object):
     def __init__(self, backend, qubits):
         self.backend = backend
